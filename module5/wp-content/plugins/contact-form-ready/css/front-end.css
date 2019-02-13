@@ -1,0 +1,13 @@
+/* Google reCAPTCHA styling fix for the 2016 theme */
+#recaptcha_table {
+	table-layout:auto !important;
+}
+
+
+.wpcf-nd-error-message {
+    display: block;
+    border: 1px solid #ccc;
+    padding: 5px;
+    color: red;
+}
+

@@ -1,0 +1,7 @@
+.form-builder-save {
+	display:none !important;
+}
+.view-data { display:none !important; }
+.access-wrap { display: none !important; }
+.field-label { display:block !important;}
+.hidden-field { display:block !important;}
