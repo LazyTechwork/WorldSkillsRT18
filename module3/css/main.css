@@ -1,0 +1,8 @@
+@font-face {
+    font-family: Choco;
+    src: url("../fonts/Chococooky.woff") format("woff"),
+        url("../fonts/Chococooky.ttf") format("opentype");
+}
+.navbar-brand,h1,h2,h3,h4,h5,h6{
+    font: bold 32px/1.5 Choco;
+}

@@ -1,0 +1,290 @@
+{
+	"info": {
+		"_postman_id": "e051af1c-f3bd-4fbb-8eb2-8c76bd8d75da",
+		"name": "Smart House",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"login\": \"user15335551863\",\n\t\"password\": \"pass\"\n}"
+				},
+				"url": {
+					"raw": "{{host}}/api/login",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get rooms",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Kn-l3xYl3tvzofYek55Xl9hoonTMGCIl",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{host}}/api/rooms",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"rooms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get room",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Kn-l3xYl3tvzofYek55Xl9hoonTMGCIl",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{host}}/api/rooms/121",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"rooms",
+						"121"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get devices",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Kn-l3xYl3tvzofYek55Xl9hoonTMGCIl",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{host}}/api/rooms/121/devices",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"rooms",
+						"121",
+						"devices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get device",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Kn-l3xYl3tvzofYek55Xl9hoonTMGCIl",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{host}}/api/devices/345",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"devices",
+						"345"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update device",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Kn-l3xYl3tvzofYek55Xl9hoonTMGCIl",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"value\": 10\n}"
+				},
+				"url": {
+					"raw": "{{host}}/api/devices/345",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"devices",
+						"345"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get macros",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Kn-l3xYl3tvzofYek55Xl9hoonTMGCIl",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{host}}/api/macros",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"macros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete macro",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Kn-l3xYl3tvzofYek55Xl9hoonTMGCIl",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{host}}/api/macros/4",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"macros",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create macro",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Kn-l3xYl3tvzofYek55Xl9hoonTMGCIl",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"macro 1\",\n\t\"devices\": [\n\t\t{\n\t\t\t\"id\": 333,\n\t\t\t\"value\": \"12\"\n\t\t},\n\t\t{\n\t\t\t\"id\": 334,\n\t\t\t\"value\": \"close\"\n\t\t},\n\t\t{\n\t\t\t\"id\": 335,\n\t\t\t\"value\": \"off\"\n\t\t}\n\t]\n}"
+				},
+				"url": {
+					"raw": "{{host}}/api/macros",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"macros"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
