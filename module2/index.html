@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Game</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+</head>
+
+<body>
+    <div class="screen screen-start show">
+        <div class="panel">
+            <h1>Игра "Наемник"</h1>
+            <ul>
+                <li>Введите свое имя и нажмите кнопку начать</li>
+                <li>Уклоняйтесь от аттак гоблинов</li>
+                <li>Уничтожайте монстров по ходу прохождения игры</li>
+                <li>Используй кнопку "1" для того, чтобы ударить противника</li>
+            </ul>
+            <form id="preInitForm">
+                <input name="nickname" type="text" placeholder="Введи здесь свое имя, будущий герой!" required>
+                <input type="submit" value="Начать!">
+            </form>
+        </div>
+    </div>
+    <div class="screen screen-game">
+        <div class="game-panel game-panel-user">
+            <div class="user-info">Username</div>
+            <div class="panel-xp">
+                <div class="score-value">
+                    <span>100</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-panel game-panel-scores">
+            <div class="timer">Time: 00:00</div>
+            <div class="kills">Killed: 0</div>
+        </div>
+
+        <div class="game-panel game-panel-skills">
+            <img src="assets/img/skill-sword.png" alt="sword">
+        </div>
+        <canvas id="game" width="100%"></canvas>
+    </div>
+    <div class="screen screen-ranking">
+        <div class="panel">
+            <h1>Rating of Heroes!</h1>
+            <table>
+                <tr>
+                    <th>#</th>
+                    <th>Username</th>
+                    <th>Killed mosters</th>
+                    <th>Time</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Konstantin</td>
+                    <td>100</td>
+                    <td>02:12</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Konstantin</td>
+                    <td>100</td>
+                    <td>02:12</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Konstantin</td>
+                    <td>100</td>
+                    <td>02:12</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Konstantin</td>
+                    <td>100</td>
+                    <td>02:12</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Konstantin</td>
+                    <td>100</td>
+                    <td>02:12</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Konstantin</td>
+                    <td>100</td>
+                    <td>02:12</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Konstantin</td>
+                    <td>100</td>
+                    <td>02:12</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Konstantin</td>
+                    <td>100</td>
+                    <td>02:12</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Konstantin</td>
+                    <td>100</td>
+                    <td>02:12</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Konstantin</td>
+                    <td>100</td>
+                    <td>02:12</td>
+                </tr>
+            </table>
+            <button>Start again!</button>
+        </div>
+    </div>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/common.js"></script>
+</body>
+
+</html>
